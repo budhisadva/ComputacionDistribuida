@@ -1,0 +1,23 @@
+instalar (ubuntu/debian):
+sudo apt-get install openmpi-bin libopenmpi-dev
+
+compilar con
+mpicc <archivo>
+o
+gcc <archivo> -l mpi
+
+para C++:
+mpic++ <archivo>
+o
+g++ <archivo> -l mpi
+
+ejectuar con
+mpirun <archivo>
+o
+mpiexec <archivo>
+
+
+argumentos de ejecucion adicionales
+mpirun --oversubscribe -np 4 <archivo>
+
+mpirun -np 4 --hostfile hostfile.txt <archivo>
